@@ -1,0 +1,94 @@
+{
+  "process_management": [
+    {
+      "q": "What is the primary role of Process Management in an Operating System?",
+      "options": ["Managing hard disk storage", "Handling creation, scheduling and termination of processes", "Controlling network connections", "Managing user interface"],
+      "answer": 1
+    },
+    {
+      "q": "Which OS component is responsible for ensuring fair CPU utilization among all processes?",
+      "options": ["File System", "Memory Manager", "Process Manager", "Device Driver"],
+      "answer": 2
+    },
+    {
+      "q": "When a process is created but has not yet been admitted to the ready queue, it is in the __ state.",
+      "options": ["Ready", "Running", "New", "Terminated"],
+      "answer": 2
+    },
+    {
+      "q": "Process synchronization is needed to:",
+      "options": ["Speed up CPU clock", "Avoid race conditions on shared data", "Increase memory size", "Reduce disk I/O"],
+      "answer": 1
+    },
+    {
+      "q": "Which of the following is NOT a process state?",
+      "options": ["Ready", "Running", "Compiling", "Waiting"],
+      "answer": 2
+    }
+  ],
+  "processes": [
+    {
+      "q": "What does PCB stand for?",
+      "options": ["Process Control Block", "Program Control Byte", "Process Command Buffer", "Primary Control Block"],
+      "answer": 0
+    },
+    {
+      "q": "Which state is a process in when it is waiting for the CPU but ready to run?",
+      "options": ["Running", "Waiting", "Ready", "Terminated"],
+      "answer": 2
+    },
+    {
+      "q": "A program in execution is called a:",
+      "options": ["Thread", "Process", "Kernel", "Scheduler"],
+      "answer": 1
+    }
+  ],
+  "cpu_scheduling": [
+    {
+      "q": "Which is NOT a goal of CPU scheduling?",
+      "options": ["Maximize throughput", "Minimize waiting time", "Maximize turnaround time", "Maximize CPU utilization"],
+      "answer": 2
+    },
+    {
+      "q": "Preemptive scheduling means:",
+      "options": ["A running process can be interrupted", "A process always runs to completion", "Only one process exists", "CPU is never idle"],
+      "answer": 0
+    }
+  ],
+  "fcfs": [
+    {
+      "q": "FCFS scheduling is:",
+      "options": ["Preemptive", "Non-preemptive", "Priority based", "Random"],
+      "answer": 1
+    },
+    {
+      "q": "The Convoy Effect in FCFS happens when:",
+      "options": ["Short processes wait behind a long process", "CPU idles frequently", "Processes never terminate", "Priority inversion occurs"],
+      "answer": 0
+    }
+  ],
+  "sjf": [
+    {
+      "q": "SJF selects the process with:",
+      "options": ["Highest priority", "Smallest burst time", "Earliest arrival", "Largest memory need"],
+      "answer": 1
+    },
+    {
+      "q": "A drawback of SJF is:",
+      "options": ["High context switching only", "Starvation of long processes", "It is always preemptive", "It ignores burst time"],
+      "answer": 1
+    }
+  ],
+  "round_robin": [
+    {
+      "q": "Round Robin scheduling is:",
+      "options": ["Non-preemptive", "Preemptive with time quantum", "Priority based only", "First Come First Serve"],
+      "answer": 1
+    },
+    {
+      "q": "A very small time quantum in Round Robin causes:",
+      "options": ["No effect", "Behaves like FCFS", "High context-switch overhead", "Starvation"],
+      "answer": 2
+    }
+  ]
+}

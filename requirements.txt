@@ -1,0 +1,8 @@
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.6
+pydantic>=2.10.0
+python-multipart>=0.0.9
+
+# Optional (only needed if you switch storage from SQLite to MongoDB):
+# motor==3.5.1
+# pymongo==4.8.0

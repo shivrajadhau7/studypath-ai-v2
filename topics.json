@@ -1,0 +1,49 @@
+{
+  "operating_system": {
+    "subject_name": "Operating System",
+    "topics": {
+      "process_management": {
+        "id": "process_management",
+        "name": "Process Management",
+        "prerequisites": [],
+        "content": "Process Management is the part of an OS that handles creation, scheduling and termination of processes. It ensures the CPU is utilized efficiently and every process gets a fair chance to execute.",
+        "estimated_minutes": 15
+      },
+      "processes": {
+        "id": "processes",
+        "name": "Processes",
+        "prerequisites": ["process_management"],
+        "content": "A Process is a program in execution. It has a Process Control Block (PCB) containing process state, program counter, CPU registers, memory info and I/O status. A process moves through states: New, Ready, Running, Waiting, Terminated.",
+        "estimated_minutes": 20
+      },
+      "cpu_scheduling": {
+        "id": "cpu_scheduling",
+        "name": "CPU Scheduling",
+        "prerequisites": ["processes"],
+        "content": "CPU Scheduling decides which process in the ready queue gets the CPU next. Goals include maximizing CPU utilization & throughput, minimizing waiting time, turnaround time and response time. Scheduling can be preemptive or non-preemptive.",
+        "estimated_minutes": 20
+      },
+      "fcfs": {
+        "id": "fcfs",
+        "name": "FCFS (First Come First Serve)",
+        "prerequisites": ["cpu_scheduling"],
+        "content": "FCFS executes processes strictly in the order they arrive in the ready queue. It is non-preemptive and simple to implement, but can cause the Convoy Effect where short processes wait behind long ones, increasing average waiting time.",
+        "estimated_minutes": 15
+      },
+      "sjf": {
+        "id": "sjf",
+        "name": "SJF (Shortest Job First)",
+        "prerequisites": ["cpu_scheduling"],
+        "content": "SJF selects the process with the smallest burst time next. It minimizes average waiting time among non-preemptive algorithms but requires knowing burst times in advance and can cause starvation of longer processes.",
+        "estimated_minutes": 15
+      },
+      "round_robin": {
+        "id": "round_robin",
+        "name": "Round Robin",
+        "prerequisites": ["cpu_scheduling"],
+        "content": "Round Robin assigns each process a fixed time quantum in a cyclic order. It is preemptive and fair, ideal for time-sharing systems. Very small quantum increases context-switch overhead; very large quantum behaves like FCFS.",
+        "estimated_minutes": 15
+      }
+    }
+  }
+}
